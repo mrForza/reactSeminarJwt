@@ -1,0 +1,12 @@
+version: '3.8'
+
+services:
+  app:
+    build:
+      context: .
+    ports:
+      - "1883:1883"
+    environment:
+      - PORT=1883
+      - SALT_ROUNDS=10
+      - JWT_SECRET_KEY=cn4ghognh3n33gunogmg
