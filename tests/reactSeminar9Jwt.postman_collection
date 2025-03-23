@@ -1,0 +1,43 @@
+{
+	"info": {
+		"_postman_id": "63bc5b2f-e201-4170-a698-453e186b7ae6",
+		"name": "reactHomework9",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "42619925"
+	},
+	"item": [
+		{
+			"name": "Получение профиля",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"url": "http://localhost:1883/profile/me"
+			},
+			"response": []
+		},
+		{
+			"name": "Аутентификация",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\": \"rsgromov@edu.hse.ru\",\r\n    \"password\": \"4nreAlPass_w00rd\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:1883/auth/login"
+			},
+			"response": []
+		}
+	]
+}
